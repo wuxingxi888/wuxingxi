@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://wuxingxi.xyz/2020/06/14/mysql%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</loc>
+    
+    <lastmod>2020-06-14T12:01:26.866Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://wuxingxi.xyz/2020/05/11/css%E5%9F%BA%E7%A1%80%E6%B8%A9%E6%95%85/</loc>
     
     <lastmod>2020-05-11T16:14:25.994Z</lastmod>
@@ -9,14 +16,14 @@
   </url>
   
   <url>
-    <loc>http://wuxingxi.xyz/2020/04/04/android-9-0%E5%8D%B8%E8%BD%BD%E5%BA%94%E7%94%A8/</loc>
+    <loc>http://wuxingxi.xyz/2020/04/18/charles%E6%8A%93%E5%8C%85/</loc>
     
     <lastmod>2020-05-09T01:59:58.637Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://wuxingxi.xyz/2020/04/18/charles%E6%8A%93%E5%8C%85/</loc>
+    <loc>http://wuxingxi.xyz/2020/04/04/android-9-0%E5%8D%B8%E8%BD%BD%E5%BA%94%E7%94%A8/</loc>
     
     <lastmod>2020-05-09T01:59:58.637Z</lastmod>
     
@@ -30,13 +37,6 @@
   </url>
   
   <url>
-    <loc>http://wuxingxi.xyz/2020/04/19/element-ui%E4%B9%8Bdialog%E7%BB%84%E4%BB%B6%E5%B0%81%E8%A3%85/</loc>
-    
-    <lastmod>2020-05-09T01:59:58.637Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://wuxingxi.xyz/2020/04/09/mac-%E5%B0%8F%E6%8A%80%E5%B7%A7%E4%B9%8Bzip%E5%8A%A0%E5%AF%86%E8%A7%A3%E5%AF%86/</loc>
     
     <lastmod>2020-05-09T01:59:58.637Z</lastmod>
@@ -44,7 +44,14 @@
   </url>
   
   <url>
-    <loc>http://wuxingxi.xyz/2020/04/08/mac%E4%B8%8B%E9%85%8D%E7%BD%AE%E5%AF%86%E9%92%A5%E8%AE%BF%E9%97%AEGitHub/</loc>
+    <loc>http://wuxingxi.xyz/2020/04/19/element-ui%E4%B9%8Bdialog%E7%BB%84%E4%BB%B6%E5%B0%81%E8%A3%85/</loc>
+    
+    <lastmod>2020-05-09T01:59:58.637Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wuxingxi.xyz/2020/04/07/vue%E4%B8%AD%E4%BD%BF%E7%94%A8websocket/</loc>
     
     <lastmod>2020-05-09T01:59:58.637Z</lastmod>
     
@@ -58,7 +65,7 @@
   </url>
   
   <url>
-    <loc>http://wuxingxi.xyz/2020/04/07/vue%E4%B8%AD%E4%BD%BF%E7%94%A8websocket/</loc>
+    <loc>http://wuxingxi.xyz/2020/04/08/mac%E4%B8%8B%E9%85%8D%E7%BD%AE%E5%AF%86%E9%92%A5%E8%AE%BF%E9%97%AEGitHub/</loc>
     
     <lastmod>2020-05-09T01:59:58.637Z</lastmod>
     
@@ -86,6 +93,13 @@
   </url>
   
   <url>
+    <loc>http://wuxingxi.xyz/tags/index.html</loc>
+    
+    <lastmod>2020-05-09T01:59:58.637Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://wuxingxi.xyz/categories/index.html</loc>
     
     <lastmod>2020-05-09T01:59:58.637Z</lastmod>
@@ -101,13 +115,6 @@
   
   <url>
     <loc>http://wuxingxi.xyz/link/index.html</loc>
-    
-    <lastmod>2020-05-09T01:59:58.637Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://wuxingxi.xyz/tags/index.html</loc>
     
     <lastmod>2020-05-09T01:59:58.637Z</lastmod>
     
