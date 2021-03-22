@@ -58,13 +58,6 @@
   </url>
   
   <url>
-    <loc>http://wuxingxi.xyz/2020/04/18/charles%E6%8A%93%E5%8C%85/</loc>
-    
-    <lastmod>2020-05-09T01:59:58.637Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://wuxingxi.xyz/2020/04/04/android-9-0%E5%8D%B8%E8%BD%BD%E5%BA%94%E7%94%A8/</loc>
     
     <lastmod>2020-05-09T01:59:58.637Z</lastmod>
@@ -72,14 +65,14 @@
   </url>
   
   <url>
-    <loc>http://wuxingxi.xyz/2020/04/19/element-ui%E4%B9%8Bdialog%E7%BB%84%E4%BB%B6%E5%B0%81%E8%A3%85/</loc>
+    <loc>http://wuxingxi.xyz/2020/04/18/charles%E6%8A%93%E5%8C%85/</loc>
     
     <lastmod>2020-05-09T01:59:58.637Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://wuxingxi.xyz/2020/04/08/js%E5%B0%81%E8%A3%85websocket/</loc>
+    <loc>http://wuxingxi.xyz/2020/04/19/element-ui%E4%B9%8Bdialog%E7%BB%84%E4%BB%B6%E5%B0%81%E8%A3%85/</loc>
     
     <lastmod>2020-05-09T01:59:58.637Z</lastmod>
     
@@ -128,14 +121,21 @@
   </url>
   
   <url>
-    <loc>http://wuxingxi.xyz/about/index.html</loc>
+    <loc>http://wuxingxi.xyz/2020/04/08/js%E5%B0%81%E8%A3%85websocket/</loc>
     
     <lastmod>2020-05-09T01:59:58.637Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://wuxingxi.xyz/categories/index.html</loc>
+    <loc>http://wuxingxi.xyz/board/index.html</loc>
+    
+    <lastmod>2020-05-09T01:59:58.637Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wuxingxi.xyz/about/index.html</loc>
     
     <lastmod>2020-05-09T01:59:58.637Z</lastmod>
     
@@ -149,14 +149,14 @@
   </url>
   
   <url>
-    <loc>http://wuxingxi.xyz/tags/index.html</loc>
+    <loc>http://wuxingxi.xyz/categories/index.html</loc>
     
     <lastmod>2020-05-09T01:59:58.637Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://wuxingxi.xyz/board/index.html</loc>
+    <loc>http://wuxingxi.xyz/tags/index.html</loc>
     
     <lastmod>2020-05-09T01:59:58.637Z</lastmod>
     
