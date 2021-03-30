@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://wuxingxi.xyz/2021/03/30/js%E5%BE%AA%E7%8E%AF%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F/</loc>
+    
+    <lastmod>2021-03-30T12:42:20.443Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://wuxingxi.xyz/2021/03/30/ES6%E6%A8%A1%E5%9D%97/</loc>
     
     <lastmod>2021-03-30T06:45:48.255Z</lastmod>
@@ -114,14 +121,14 @@
   </url>
   
   <url>
-    <loc>http://wuxingxi.xyz/2020/04/19/element-ui%E4%B9%8Bdialog%E7%BB%84%E4%BB%B6%E5%B0%81%E8%A3%85/</loc>
+    <loc>http://wuxingxi.xyz/2020/04/18/charles%E6%8A%93%E5%8C%85/</loc>
     
     <lastmod>2020-05-09T01:59:58.637Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://wuxingxi.xyz/2020/04/18/charles%E6%8A%93%E5%8C%85/</loc>
+    <loc>http://wuxingxi.xyz/2020/04/19/element-ui%E4%B9%8Bdialog%E7%BB%84%E4%BB%B6%E5%B0%81%E8%A3%85/</loc>
     
     <lastmod>2020-05-09T01:59:58.637Z</lastmod>
     
@@ -149,14 +156,14 @@
   </url>
   
   <url>
-    <loc>http://wuxingxi.xyz/2020/04/25/mysql%E8%BF%9E%E6%8E%A5%E6%B1%A0%E7%9A%84premise%E5%B0%81%E8%A3%85/</loc>
+    <loc>http://wuxingxi.xyz/2020/04/07/vue%E4%B8%AD%E4%BD%BF%E7%94%A8websocket/</loc>
     
     <lastmod>2020-05-09T01:59:58.637Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://wuxingxi.xyz/2020/04/07/vue%E4%B8%AD%E4%BD%BF%E7%94%A8websocket/</loc>
+    <loc>http://wuxingxi.xyz/2020/04/25/mysql%E8%BF%9E%E6%8E%A5%E6%B1%A0%E7%9A%84premise%E5%B0%81%E8%A3%85/</loc>
     
     <lastmod>2020-05-09T01:59:58.637Z</lastmod>
     
@@ -184,7 +191,7 @@
   </url>
   
   <url>
-    <loc>http://wuxingxi.xyz/board/index.html</loc>
+    <loc>http://wuxingxi.xyz/link/index.html</loc>
     
     <lastmod>2020-05-09T01:59:58.637Z</lastmod>
     
@@ -198,14 +205,14 @@
   </url>
   
   <url>
-    <loc>http://wuxingxi.xyz/link/index.html</loc>
+    <loc>http://wuxingxi.xyz/tags/index.html</loc>
     
     <lastmod>2020-05-09T01:59:58.637Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://wuxingxi.xyz/tags/index.html</loc>
+    <loc>http://wuxingxi.xyz/board/index.html</loc>
     
     <lastmod>2020-05-09T01:59:58.637Z</lastmod>
     
