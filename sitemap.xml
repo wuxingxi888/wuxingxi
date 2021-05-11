@@ -2,9 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://wuxingxi.xyz/2021/03/30/js%E5%BE%AA%E7%8E%AF%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F/</loc>
+    <loc>http://wuxingxi.xyz/2021/05/11/vue%E4%B8%AD%E4%BD%BF%E7%94%A8svg/</loc>
     
-    <lastmod>2021-03-30T12:42:20.443Z</lastmod>
+    <lastmod>2021-05-11T14:15:16.041Z</lastmod>
     
   </url>
   
@@ -135,13 +135,6 @@
   </url>
   
   <url>
-    <loc>http://wuxingxi.xyz/2020/04/08/js%E5%B0%81%E8%A3%85websocket/</loc>
-    
-    <lastmod>2020-05-09T01:59:58.637Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://wuxingxi.xyz/2020/04/09/mac-%E5%B0%8F%E6%8A%80%E5%B7%A7%E4%B9%8Bzip%E5%8A%A0%E5%AF%86%E8%A7%A3%E5%AF%86/</loc>
     
     <lastmod>2020-05-09T01:59:58.637Z</lastmod>
@@ -156,7 +149,7 @@
   </url>
   
   <url>
-    <loc>http://wuxingxi.xyz/2020/04/07/vue%E4%B8%AD%E4%BD%BF%E7%94%A8websocket/</loc>
+    <loc>http://wuxingxi.xyz/2020/04/08/js%E5%B0%81%E8%A3%85websocket/</loc>
     
     <lastmod>2020-05-09T01:59:58.637Z</lastmod>
     
@@ -164,6 +157,13 @@
   
   <url>
     <loc>http://wuxingxi.xyz/2020/04/25/mysql%E8%BF%9E%E6%8E%A5%E6%B1%A0%E7%9A%84premise%E5%B0%81%E8%A3%85/</loc>
+    
+    <lastmod>2020-05-09T01:59:58.637Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wuxingxi.xyz/2020/04/07/vue%E4%B8%AD%E4%BD%BF%E7%94%A8websocket/</loc>
     
     <lastmod>2020-05-09T01:59:58.637Z</lastmod>
     
@@ -184,7 +184,7 @@
   </url>
   
   <url>
-    <loc>http://wuxingxi.xyz/about/index.html</loc>
+    <loc>http://wuxingxi.xyz/categories/index.html</loc>
     
     <lastmod>2020-05-09T01:59:58.637Z</lastmod>
     
@@ -198,7 +198,7 @@
   </url>
   
   <url>
-    <loc>http://wuxingxi.xyz/categories/index.html</loc>
+    <loc>http://wuxingxi.xyz/about/index.html</loc>
     
     <lastmod>2020-05-09T01:59:58.637Z</lastmod>
     
