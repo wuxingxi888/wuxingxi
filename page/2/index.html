@@ -1,172 +1,266 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>吴星喜的博客</title><meta name="description" content="爱码仕 ？"><meta name="author" content="吴星喜"><meta name="copyright" content="吴星喜"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/favicon.ico"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="baidu-site-verification" content="17iBILoOXa"/><meta name="twitter:card" content="summary"><meta name="twitter:title" content="吴星喜的博客"><meta name="twitter:description" content="爱码仕 ？"><meta name="twitter:image" content="http://wuxingxi.xyz/img/avatar.png"><meta property="og:type" content="website"><meta property="og:title" content="吴星喜的博客"><meta property="og:url" content="http://wuxingxi.xyz/page/2/"><meta property="og:site_name" content="吴星喜的博客"><meta property="og:description" content="爱码仕 ？"><meta property="og:image" content="http://wuxingxi.xyz/img/avatar.png"><script src="https://cdn.jsdelivr.net/npm/js-cookie/dist/js.cookie.min.js"></script><script>var autoChangeMode = '1'
-var t = Cookies.get("theme")
-if (autoChangeMode == '1'){
-  var isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches
-  var isLightMode = window.matchMedia("(prefers-color-scheme: light)").matches
-  var isNotSpecified = window.matchMedia("(prefers-color-scheme: no-preference)").matches
-  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
-
-  if (t === undefined){
-    if (isLightMode) activateLightMode()
-    else if (isDarkMode) activateDarkMode()
-    else if (isNotSpecified || hasNoSupport){
-      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
-      var now = new Date()
-      var hour = now.getHours()
-      var isNight = hour < 6 || hour >= 18
-      isNight ? activateDarkMode() : activateLightMode()
-  }
-  } else if (t == 'light') activateLightMode()
-  else activateDarkMode()
-
-} else if (autoChangeMode == '2'){
-  now = new Date();
-  hour = now.getHours();
-  isNight = hour < 6 || hour >= 18
-  if(t === undefined) isNight? activateDarkMode() : activateLightMode()
-  else if (t === 'light') activateLightMode()
-  else activateDarkMode() 
-} else {
-  if ( t == 'dark' ) activateDarkMode()
-  else if ( t == 'light') activateLightMode()
-}
-
-function activateDarkMode(){
-  document.documentElement.setAttribute('data-theme', 'dark')
-  if (document.querySelector('meta[name="theme-color"]') !== null){
-    document.querySelector('meta[name="theme-color"]').setAttribute('content','#000')
-  }
-}
-function activateLightMode(){
-  document.documentElement.setAttribute('data-theme', 'light')
-  if (document.querySelector('meta[name="theme-color"]') !== null){
-  document.querySelector('meta[name="theme-color"]').setAttribute('content','#fff')
-  }
-}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css"><link rel="canonical" href="http://wuxingxi.xyz/page/2/"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web"><script>var GLOBAL_CONFIG = { 
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>吴星喜的博客</title><meta name="author" content="吴星喜"><meta name="copyright" content="吴星喜"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="爱码仕 ？">
+<meta property="og:type" content="website">
+<meta property="og:title" content="吴星喜的博客">
+<meta property="og:url" content="http://wuxingxi.xyz/page/2/index.html">
+<meta property="og:site_name" content="吴星喜的博客">
+<meta property="og:description" content="爱码仕 ？">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://wuxingxi.xyz/img/avatar.png">
+<meta property="article:author" content="吴星喜">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://wuxingxi.xyz/img/avatar.png"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="http://wuxingxi.xyz/page/2/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
   root: '/',
   algolia: undefined,
   localSearch: undefined,
-  translate: {"defaultEncoding":2,"translateDelay":0,"cookieDomain":"https://wuxingxi888.github.io/wuxingxi/","msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
   copy: {
     success: '复制成功',
     error: '复制错误',
     noSupport: '浏览器不支持'
   },
-  bookmark: {
-    message_prev: '按',
-    message_next: '键将本页加入书签'
+  relativeDate: {
+    homepage: true,
+    post: true
   },
-  runtime_unit: '天',
-  runtime: true,
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
   copyright: undefined,
-  ClickShowText: undefined,
-  medium_zoom: false,
-  fancybox: true,
-  Snackbar: {"bookmark":{"message_prev":"按","message_next":"键将本页加入书签"},"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#2d3035","position":"bottom-left"},
-  baiduPush: true,
-  highlightCopy: true,
-  highlightLang: true,
-  highlightShrink: 'false',
-  isFontAwesomeV5: true,
-  isPhotoFigcaption: true
-  
-}</script><script>var GLOBAL_CONFIG_SITE = { 
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isanchor: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '吴星喜的博客',
   isPost: false,
   isHome: true,
-  isSidebar: false  
-  }</script><noscript><style>
-#page-header {
-  opacity: 1
-}
-.justified-gallery img{
-  opacity: 1
-}
-</style></noscript><meta name="generator" content="Hexo 4.2.0"></head><body><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">28</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">24</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">10</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/board/"><i class="fa-fw fa fa-coffee"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-list" aria-hidden="true"></i><span> 娱乐</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fa fa-film"></i><span> 电影</span></a></li></ul></div></div></div></div><div id="body-wrap"><div class="full_page" id="nav" style="background-image: url(/img/index.jpg)"><div id="page-header"><span class="pull_left" id="blog_name"><a class="blog_title" id="site-name" href="/">吴星喜的博客</a></span><span class="pull_right menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/board/"><i class="fa-fw fa fa-coffee"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-list" aria-hidden="true"></i><span> 娱乐</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fa fa-film"></i><span> 电影</span></a></li></ul></div></div><span class="toggle-menu close"><a class="site-page"><i class="fa fa-bars fa-fw" aria-hidden="true"></i></a></span></span></div><div id="site-info"><h1 id="site_title">吴星喜的博客</h1><div id="site_subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/wuxingxi888" target="_blank" title="Github"><i class="fa fa-github" aria-hidden="true"></i></a><a class="social-icon" href="982747033@qq.com" target="_blank" title="Email"><i class="fa fa-envelope" aria-hidden="true"></i></a></div></div><div id="scroll_down"><i class="fa fa-angle-down scroll-down-effects"></i></div></div><main class="layout_page" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/11/30/ES6%20%E7%9F%A5%E8%AF%86%E7%82%B9%E6%B1%87%E6%80%BB/" title="ES6 知识点汇总">     <img class="post_bg lazyload" data-src="http://qiniu.wuxingxi888.top/hexo-ES6.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="ES6 知识点汇总"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/11/30/ES6%20%E7%9F%A5%E8%AF%86%E7%82%B9%E6%B1%87%E6%80%BB/" title="ES6 知识点汇总">ES6 知识点汇总</a><div class="article-meta-wrap"><time class="post-meta__date"><span class="post-meta__date-created" title="发表于 2020-11-30 17:36:00"><i class="fa fa-calendar" aria-hidden="true"></i>2020-11-30</span><span class="article-meta__separator">|</span><span class="post-meta__date-updated" title="更新于 2020-11-30 18:34:42"><i class="fa fa-history" aria-hidden="true"></i>2020-11-30</span></time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fa fa-inbox article-meta__icon" aria-hidden="true"></i><a class="article-meta__categories" href="/categories/JavaScript/">JavaScript</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/ES6/">ES6</a></span></div><div class="content">
-            ES6 知识点汇总
-          
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2021-05-12 13:37:11'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    })(window)</script><meta name="generator" content="Hexo 5.4.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">28</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">24</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">10</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 娱乐</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('/img/index.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">吴星喜的博客</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 娱乐</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">吴星喜的博客</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/wuxingxi888" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:wuxingxi888@163.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2020/11/30/ES6%20%E7%9F%A5%E8%AF%86%E7%82%B9%E6%B1%87%E6%80%BB/" title="ES6 知识点汇总">ES6 知识点汇总</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-11-30T09:36:00.000Z" title="发表于 2020-11-30 17:36:00">2020-11-30</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/JavaScript/">JavaScript</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/ES6/">ES6</a></span></div><div class="content">ES6 知识点汇总
 
 
 
-1.let
-            代码块内有效不能重复声明不存在变量提升
-          
+1.let代码块内有效不能重复声明不存在变量提升
 
 
 
-2.const
-            声明一个只读变量，声明之后不允许改变
-          
+
+2.const声明一个只读变量，声明之后不允许改变
 
 
 
-3.解构赋值
-  ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/08/17/CentOS-6-10%E9%83%A8%E7%BD%B2vue%E9%A1%B9%E7%9B%AE/" title="CentOS 6.10部署vue项目">     <img class="post_bg lazyload" data-src="http://qiniu.wuxingxi888.top/hexolinux.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="CentOS 6.10部署vue项目"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/08/17/CentOS-6-10%E9%83%A8%E7%BD%B2vue%E9%A1%B9%E7%9B%AE/" title="CentOS 6.10部署vue项目">CentOS 6.10部署vue项目</a><div class="article-meta-wrap"><time class="post-meta__date"><span class="post-meta__date-created" title="发表于 2020-08-17 15:33:35"><i class="fa fa-calendar" aria-hidden="true"></i>2020-08-17</span><span class="article-meta__separator">|</span><span class="post-meta__date-updated" title="更新于 2020-08-17 15:41:12"><i class="fa fa-history" aria-hidden="true"></i>2020-08-17</span></time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fa fa-inbox article-meta__icon" aria-hidden="true"></i><a class="article-meta__categories" href="/categories/linux/">linux</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/linux/">linux</a><span class="article-meta__link">-</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/node-s/">node's</a></span></div><div class="content">打包 上传1. 在本地使用以下命令，打包npm run build 2. 打包之后本地会出现dist文件夹。将dist文件夹以及package.json 文件上传到centos服务器上，此处随便什么位置，新建个文件夹就能放。
+
+3.解构赋值a. 数组模型解构    i. 基本        1) let [ a , b , c ] = [ 1 , 2 , 3 ]    ii. 可嵌套        1) let [ a , [ [ b ] , c ] ] = [ 1 , [ [ 2 ] , 3 ] ]    iii. 可忽略        1) let [ a , , c ] = [ 1 , 2 , 3 ]    iv. 不完全解构        1) let [ a = 1 , b ] = [ ]   // a = 1 , b = undefiend    v. 剩余运算符        1) let [ a , b , c , d , e ] = ‘hello’  // a = ‘h’ , b = ‘e’ 等等    vi. 解构默认值        1) let [ a = 2 ] = [ undefiend ]  // a = 2b. 对象模型解构    i. ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2020/08/17/CentOS-6-10%E9%83%A8%E7%BD%B2vue%E9%A1%B9%E7%9B%AE/" title="CentOS 6.10部署vue项目">CentOS 6.10部署vue项目</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-08-17T07:33:35.000Z" title="发表于 2020-08-17 15:33:35">2020-08-17</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/linux/">linux</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/linux/">linux</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/node-s/">node's</a></span></div><div class="content">打包 上传1. 在本地使用以下命令，打包npm run build 2. 打包之后本地会出现dist文件夹。将dist文件夹以及package.json 文件上传到centos服务器上，此处随便什么位置，新建个文件夹就能放。
 
 
 
-增加app.js文件&#x2F;&#x2F;定义目录const fs ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/08/17/CentOS-6-10%E9%83%A8%E7%BD%B2nodejs-express%E9%A1%B9%E7%9B%AE/" title="CentOS 6.10部署nodejs express项目">     <img class="post_bg lazyload" data-src="http://qiniu.wuxingxi888.top/hexolinux.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="CentOS 6.10部署nodejs express项目"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/08/17/CentOS-6-10%E9%83%A8%E7%BD%B2nodejs-express%E9%A1%B9%E7%9B%AE/" title="CentOS 6.10部署nodejs express项目">CentOS 6.10部署nodejs express项目</a><div class="article-meta-wrap"><time class="post-meta__date"><span class="post-meta__date-created" title="发表于 2020-08-17 14:06:05"><i class="fa fa-calendar" aria-hidden="true"></i>2020-08-17</span><span class="article-meta__separator">|</span><span class="post-meta__date-updated" title="更新于 2020-08-20 20:25:45"><i class="fa fa-history" aria-hidden="true"></i>2020-08-20</span></time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fa fa-inbox article-meta__icon" aria-hidden="true"></i><a class="article-meta__categories" href="/categories/linux/">linux</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/linux/">linux</a><span class="article-meta__link">-</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/nodejs/">nodejs</a></span></div><div class="content">CentOS：​        最近用 node写的服务端基本完工，公司让我部署到线上 ….. 对于没有玩过Linux的我 ，真的是一脸懵逼 无从下手，但是难不到有心人的。办法总比困难多 ，话不多说  开整…..
+增加app.js文件//定义目录const fs = require(&#x27;fs&#x27;);const path = require(&#x27;path&#x27;);const express = require(&#x27;express&#x27;);const app = express();//vue目录app.use(express.static(path.resolve(__dirname, &#x27;./dist&#x27;)))app.get(&#x27;*&#x27;, function(req, res) &#123;    const html = fs.readFileSync(path.resolve(__dirname, &#x27;./dist/index.html&#x27;), &#x27;utf-8&#x2 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2020/08/17/CentOS-6-10%E9%83%A8%E7%BD%B2nodejs-express%E9%A1%B9%E7%9B%AE/" title="CentOS 6.10部署nodejs express项目">CentOS 6.10部署nodejs express项目</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-08-17T06:06:05.000Z" title="发表于 2020-08-17 14:06:05">2020-08-17</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/linux/">linux</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/linux/">linux</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/nodejs/">nodejs</a></span></div><div class="content">CentOS：​        最近用 node写的服务端基本完工，公司让我部署到线上 ….. 对于没有玩过Linux的我 ，真的是一脸懵逼 无从下手，但是难不到有心人的。办法总比困难多 ，话不多说  开整…..
 
 服务器系统版本：centos 6.10
-window系统可用xshell工具登陆ro ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/08/07/noden-module-exports%E5%92%8Cexprots%E7%9A%84%E5%8C%BA%E5%88%AB%E5%92%8C%E4%BD%BF%E7%94%A8/" title="noden module.exports和exprots的区别和使用">     <img class="post_bg lazyload" data-src="http://qiniu.wuxingxi888.top/hexonode.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="noden module.exports和exprots的区别和使用"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/08/07/noden-module-exports%E5%92%8Cexprots%E7%9A%84%E5%8C%BA%E5%88%AB%E5%92%8C%E4%BD%BF%E7%94%A8/" title="noden module.exports和exprots的区别和使用">noden module.exports和exprots的区别和使用</a><div class="article-meta-wrap"><time class="post-meta__date"><span class="post-meta__date-created" title="发表于 2020-08-07 13:18:53"><i class="fa fa-calendar" aria-hidden="true"></i>2020-08-07</span><span class="article-meta__separator">|</span><span class="post-meta__date-updated" title="更新于 2020-08-07 13:29:44"><i class="fa fa-history" aria-hidden="true"></i>2020-08-07</span></time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fa fa-inbox article-meta__icon" aria-hidden="true"></i><a class="article-meta__categories" href="/categories/nodes/">nodes</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/nodejs/">nodejs</a><span class="article-meta__link">-</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/module/">module</a></span></div><div class="content">exports = \module.exports = {};****
-所以module.exports和exports的区别就是var a={}; var b=a;，a和b的区别
-module首先要明确的一点，module是一个对象 {Object}。当你新建一个文件，比如mo.js，文件内容如下 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/07/31/mysql%E6%A0%B9%E6%8D%AE%E6%9F%A5%E8%AF%A2%E5%A4%9A%E4%B8%AA%E5%80%BC%E8%BF%94%E5%9B%9E%E7%BB%93%E6%9E%9C/" title="mysql根据查询多个值返回结果">     <img class="post_bg lazyload" data-src="http://qiniu.wuxingxi888.top/hexomysql.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="mysql根据查询多个值返回结果"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/07/31/mysql%E6%A0%B9%E6%8D%AE%E6%9F%A5%E8%AF%A2%E5%A4%9A%E4%B8%AA%E5%80%BC%E8%BF%94%E5%9B%9E%E7%BB%93%E6%9E%9C/" title="mysql根据查询多个值返回结果">mysql根据查询多个值返回结果</a><div class="article-meta-wrap"><time class="post-meta__date"><span class="post-meta__date-created" title="发表于 2020-07-31 09:22:06"><i class="fa fa-calendar" aria-hidden="true"></i>2020-07-31</span><span class="article-meta__separator">|</span><span class="post-meta__date-updated" title="更新于 2020-07-31 10:07:06"><i class="fa fa-history" aria-hidden="true"></i>2020-07-31</span></time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fa fa-inbox article-meta__icon" aria-hidden="true"></i><a class="article-meta__categories" href="/categories/mysql/">mysql</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/mysql/">mysql</a></span></div><div class="content">背景需要根据查找id为数组元素的所有数据。
-正常情况需要查询的语句：select *from temp where id in ('1','2','3','4','5')
+window系统可用xshell工具登陆root用户 ，mac系统可用过命令ssh root@服务器ip 登陆 （本人用的finalshell 还是比较好用 哈哈）
+
+安装nodejs  nom/cnpm方式一：yum install -y nodejs  //安装nodejsnpm install -g cnpm --registry=https://registry.npm.taobao.org //安装cnpm 淘宝镜像cnpm install -g n n stable // 更新node版本 （慢的一批 不推荐）
+
+
+
+方式二：
+wget https://nodejs.org/dist/v6.9.5/node-v6.9.5-linux-x64.tar.xz //下载node安装包 具体版本官网找连接替换tar xvf nod ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2020/08/07/noden-module-exports%E5%92%8Cexprots%E7%9A%84%E5%8C%BA%E5%88%AB%E5%92%8C%E4%BD%BF%E7%94%A8/" title="noden module.exports和exprots的区别和使用">noden module.exports和exprots的区别和使用</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-08-07T05:18:53.000Z" title="发表于 2020-08-07 13:18:53">2020-08-07</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/nodes/">nodes</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/nodejs/">nodejs</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/module/">module</a></span></div><div class="content">exports = \module.exports = {};****
+所以module.exports和exports的区别就是var a=&#123;&#125;; var b=a;，a和b的区别
+module首先要明确的一点，module是一个对象 &#123;Object&#125;。当你新建一个文件，比如mo.js，文件内容如下：
+console.log(module); 
+
+然后在CMD里执行这个文件node mo.js，就能看到module其实是一个Module实例，你可以这么理解，NodeJS中定义了一个Module类，这个类中有很多属性和方法，exports是其中的一个属性：
+function Module &#123;  id : &#x27;blabla&#x27;,  exports : &#123;&#125;,  blabla... &#125; 
+
+当每个js文件在执行或被require的时候，NodeJS其实创建了一个新的实例var module = new Module()，这个实例名叫module。这也就是为什么你并没有定义module这个变量，却能 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2020/07/31/mysql%E6%A0%B9%E6%8D%AE%E6%9F%A5%E8%AF%A2%E5%A4%9A%E4%B8%AA%E5%80%BC%E8%BF%94%E5%9B%9E%E7%BB%93%E6%9E%9C/" title="mysql根据查询多个值返回结果">mysql根据查询多个值返回结果</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-07-31T01:22:06.000Z" title="发表于 2020-07-31 09:22:06">2020-07-31</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/mysql/">mysql</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/mysql/">mysql</a></span></div><div class="content">背景需要根据查找id为数组元素的所有数据。
+正常情况需要查询的语句：select *from temp where id in (&#x27;1&#x27;,&#x27;2&#x27;,&#x27;3&#x27;,&#x27;4&#x27;,&#x27;5&#x27;)
 
 在实际过程中发现一直查不出数据，实际上能够查出数据，弄得一直很郁闷，找不出原因。通过各终尝试，最后在项目中通过断点找出原因。
- ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/06/14/mysql%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/" title="mysql常用操作">     <img class="post_bg lazyload" data-src="http://qiniu.wuxingxi888.top/hexomysql.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="mysql常用操作"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/06/14/mysql%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/" title="mysql常用操作">mysql常用操作</a><div class="article-meta-wrap"><time class="post-meta__date"><span class="post-meta__date-created" title="发表于 2020-06-14 14:17:59"><i class="fa fa-calendar" aria-hidden="true"></i>2020-06-14</span><span class="article-meta__separator">|</span><span class="post-meta__date-updated" title="更新于 2020-07-31 09:25:12"><i class="fa fa-history" aria-hidden="true"></i>2020-07-31</span></time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fa fa-inbox article-meta__icon" aria-hidden="true"></i><a class="article-meta__categories" href="/categories/mysql/">mysql</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/mysql/">mysql</a></span></div><div class="content">mysql常用操作
+在进行查询时in中自动添加了单引号，如：select *from temp where id in (&#x27;1,2,3,4,5&#x27;)这个sql肯定就不会查出数据。
+
+刚开始想到的解决方法是，通过
+id=id.replace(&quot;,&quot;, &quot;&#x27;,&#x27;&quot;)；
+
+进行替换，达到想要的查询语句。问题还是没有就解决。通过断点发现sql变为：
+select *from temp where id in (&#x27;1\&#x27;,&#x27;2\&#x27;,&#x27;3\&#x27;,&#x27;4\&#x27;,\&#x27;5 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2020/06/14/mysql%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/" title="mysql常用操作">mysql常用操作</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-06-14T06:17:59.000Z" title="发表于 2020-06-14 14:17:59">2020-06-14</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/mysql/">mysql</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/mysql/">mysql</a></span></div><div class="content">mysql常用操作
 启动mysql服务   sudo /usr/local/mysql/support-files/mysql.server start
 
 停止mysql服务   sudo /usr/local/mysql/support-files/mysql.server stop
 
-重启mys ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/05/11/css%E5%9F%BA%E7%A1%80%E6%B8%A9%E6%95%85/" title="css基础温故">     <img class="post_bg lazyload" data-src="http://qiniu.wuxingxi888.top/hexocss.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="css基础温故"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/05/11/css%E5%9F%BA%E7%A1%80%E6%B8%A9%E6%95%85/" title="css基础温故">css基础温故</a><div class="article-meta-wrap"><time class="post-meta__date"><span class="post-meta__date-created" title="发表于 2020-05-11 23:53:24"><i class="fa fa-calendar" aria-hidden="true"></i>2020-05-11</span><span class="article-meta__separator">|</span><span class="post-meta__date-updated" title="更新于 2020-05-12 00:14:25"><i class="fa fa-history" aria-hidden="true"></i>2020-05-12</span></time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fa fa-inbox article-meta__icon" aria-hidden="true"></i><a class="article-meta__categories" href="/categories/CSS/">CSS</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/HTML/">HTML</a><span class="article-meta__link">-</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/CSS/">CSS</a></span></div><div class="content">
-            三栏布局
-          
+重启mysql服务  sudo /usr/local/mysql/support-files/mysql.server restart
+
+连接mysql数据库 mysql -u root -p
+
+退出mysql数据库 exit  || quit
+
+创建mysql数据库  create database test;
+
+查看mysql数据库 show databases;
+
+删除mysql数据库 drop database test;
+
+选择mysql数据库 use test;
+
+创建mysql数据表 CREATE TABLE table_name (column_name column_type);  
+如：
+create table table_name(   tutorial_id INT NOT  ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2020/05/11/css%E5%9F%BA%E7%A1%80%E6%B8%A9%E6%95%85/" title="css基础温故">css基础温故</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-05-11T15:53:24.000Z" title="发表于 2020-05-11 23:53:24">2020-05-11</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/CSS/">CSS</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/HTML/">HTML</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/CSS/">CSS</a></span></div><div class="content">三栏布局
+
+题目：假设高度已知，请写出三栏布局，其中左栏、右栏宽度各为 300px，中间自适应。解答：可以有很多种布局方式，这里列出五种：float布局，absolute布局，flex布局，table布局，grid布局，代码如下：
+&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;	&lt;meta charset=&quot;utf-8&quot;&gt;	&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;	&lt;title&gt;三栏布局&lt;/title&gt;	&lt;link rel=&quot;stylesheet&quot; href=&quot;&quot;&gt;	&lt;style type=&quot;text/css&quot; media=&quot;screen&quot;&gt;		html *&#123;			margin: 0;			padding: 0;		&#125;	&lt;/style&gt;& ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2020/04/27/%E8%AE%A9APP%E4%BF%A1%E4%BB%BB%E6%88%91%E4%BB%AC%E6%89%8B%E5%8A%A8%E5%AF%BC%E5%85%A5%E7%9A%84%E8%AF%81%E4%B9%A6/" title="让APP信任我们手动导入的证书">让APP信任我们手动导入的证书</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-04-27T12:56:15.000Z" title="发表于 2020-04-27 20:56:15">2020-04-27</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/android/">android</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/Charles/">Charles</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/android/">android</a></span></div><div class="content">Android 6.0 (API level 23)以后，APP默认只信任系统自带的CA证书，对于用户导入的不再信任，解决方法如下：
 
 
-            题目：假设高度已知，请写出三栏布局，其中左栏、右栏宽度各为 300px，中间自适应。解答：可以有很多种布局方式，这里列出五种：float布局，absolute布局，flex布局，table布局，grid布局，代码如 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/04/27/%E8%AE%A9APP%E4%BF%A1%E4%BB%BB%E6%88%91%E4%BB%AC%E6%89%8B%E5%8A%A8%E5%AF%BC%E5%85%A5%E7%9A%84%E8%AF%81%E4%B9%A6/" title="让APP信任我们手动导入的证书">     <img class="post_bg lazyload" data-src="http://qiniu.wuxingxi888.top/hexogetdata.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="让APP信任我们手动导入的证书"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/04/27/%E8%AE%A9APP%E4%BF%A1%E4%BB%BB%E6%88%91%E4%BB%AC%E6%89%8B%E5%8A%A8%E5%AF%BC%E5%85%A5%E7%9A%84%E8%AF%81%E4%B9%A6/" title="让APP信任我们手动导入的证书">让APP信任我们手动导入的证书</a><div class="article-meta-wrap"><time class="post-meta__date"><span class="post-meta__date-created" title="发表于 2020-04-27 20:56:15"><i class="fa fa-calendar" aria-hidden="true"></i>2020-04-27</span><span class="article-meta__separator">|</span><span class="post-meta__date-updated" title="更新于 2020-05-09 09:59:58"><i class="fa fa-history" aria-hidden="true"></i>2020-05-09</span></time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fa fa-inbox article-meta__icon" aria-hidden="true"></i><a class="article-meta__categories" href="/categories/android/">android</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/Charles/">Charles</a><span class="article-meta__link">-</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/android/">android</a></span></div><div class="content">
-            Android 6.0 (API level 23)以后，APP默认只信任系统自带的CA证书，对于用户导入的不再信任，解决方法如下：
-          
 
 
 
+在你的Android项目的res文件夹下创建xml文件 xxx.xml
 
-            在你的Android项目的res文件夹下创建xml文件 xxx.xml&lt;?xml ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/04/25/mysql%E8%BF%9E%E6%8E%A5%E6%B1%A0%E7%9A%84premise%E5%B0%81%E8%A3%85/" title="mysql连接池的premise封装">     <img class="post_bg lazyload" data-src="http://qiniu.wuxingxi888.top/hexomysql.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="mysql连接池的premise封装"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/04/25/mysql%E8%BF%9E%E6%8E%A5%E6%B1%A0%E7%9A%84premise%E5%B0%81%E8%A3%85/" title="mysql连接池的premise封装">mysql连接池的premise封装</a><div class="article-meta-wrap"><time class="post-meta__date"><span class="post-meta__date-created" title="发表于 2020-04-25 20:48:45"><i class="fa fa-calendar" aria-hidden="true"></i>2020-04-25</span><span class="article-meta__separator">|</span><span class="post-meta__date-updated" title="更新于 2020-05-09 09:59:58"><i class="fa fa-history" aria-hidden="true"></i>2020-05-09</span></time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fa fa-inbox article-meta__icon" aria-hidden="true"></i><a class="article-meta__categories" href="/categories/nodejs/">nodejs</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/nodejs-mysql/">nodejs mysql</a></span></div><div class="content">
-            新建db.js， 内容如下：
-          
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&lt;network-security-config xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;&gt;  &lt;base-config cleartextTrafficPermitted=&quot;true&quot;&gt;      &lt;trust-anchors&gt;          &lt;certificates src=&quot;system&quot; overridePins=&quot;true&quot; /&gt;          &lt;certificates src=&quot;user&quot; ove ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2020/04/25/mysql%E8%BF%9E%E6%8E%A5%E6%B1%A0%E7%9A%84premise%E5%B0%81%E8%A3%85/" title="mysql连接池的premise封装">mysql连接池的premise封装</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-04-25T12:48:45.000Z" title="发表于 2020-04-25 20:48:45">2020-04-25</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/nodejs/">nodejs</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/nodejs-mysql/">nodejs mysql</a></span></div><div class="content">新建db.js， 内容如下：
 
-
-            const mysql &#x3D; require(&#39;mysql&#39;);&#x2F;&#x2F; 创建连接池const pool &#x3D; mysql.createPool( ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/04/19/element-ui%E4%B9%8Bdialog%E7%BB%84%E4%BB%B6%E5%B0%81%E8%A3%85/" title="element-ui之dialog组件封装">     <img class="post_bg lazyload" data-src="http://qiniu.wuxingxi888.top/hexoelement-ui.svg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="element-ui之dialog组件封装"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/04/19/element-ui%E4%B9%8Bdialog%E7%BB%84%E4%BB%B6%E5%B0%81%E8%A3%85/" title="element-ui之dialog组件封装">element-ui之dialog组件封装</a><div class="article-meta-wrap"><time class="post-meta__date"><span class="post-meta__date-created" title="发表于 2020-04-19 16:55:31"><i class="fa fa-calendar" aria-hidden="true"></i>2020-04-19</span><span class="article-meta__separator">|</span><span class="post-meta__date-updated" title="更新于 2020-05-09 09:59:58"><i class="fa fa-history" aria-hidden="true"></i>2020-05-09</span></time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fa fa-inbox article-meta__icon" aria-hidden="true"></i><a class="article-meta__categories" href="/categories/vue/">vue</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/element-ui/">element-ui</a></span></div><div class="content">
-            组件封装：
-          
+const mysql = require(&#x27;mysql&#x27;);// 创建连接池const pool = mysql.createPool(&#123;  connectionLimit: 5,  host: process.env.dbHost,  user: process.env.dbUser,  password: process.env.dbPassword,  database: process.env.dbDatabase,  multipleStatements: true&#125;);let query = function (sql, values) &#123;  // 返回一个 Promise  return new Promise((resolve, reject) =&gt; &#123;    pool.getConnection(function (err, connection) &#123;      if (err) &#123;        reject(err)      &#125; el ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2020/04/19/element-ui%E4%B9%8Bdialog%E7%BB%84%E4%BB%B6%E5%B0%81%E8%A3%85/" title="element-ui之dialog组件封装">element-ui之dialog组件封装</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-04-19T08:55:31.000Z" title="发表于 2020-04-19 16:55:31">2020-04-19</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/vue/">vue</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/element-ui/">element-ui</a></span></div><div class="content">组件封装：
 
 
 
+&lt;template&gt;  &lt;span&gt;    &lt;span class=&quot;resetPass&quot; @click=&quot;openDialog&quot;&gt;修改密码&lt;/span&gt;    &lt;el-dialog      :visible.sync=&quot;DialogVisible&quot;      :close-on-click-modal=&quot;false&quot;      :destroy-on-close=&quot;true&quot;      title=&quot;修改密码&quot;      width=&quot;30%&quot;      append-to-body      center      @close=&quot;resetForm(&#x27;ruleForm&#x27;)&quot;&gt;      &lt;span&gt;this is a dialog&lt;/span&gt;      &lt;span slot=&quot;foo ...</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/#content-inner">3</a><a class="extend next" rel="next" href="/page/3/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-info-avatar is-center"><img class="avatar-img" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">吴星喜</div><div class="author-info__description">爱码仕 ？</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">28</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">24</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">10</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/wuxingxi888/"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/wuxingxi888" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:wuxingxi888@163.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2021/05/11/vue%E4%B8%AD%E4%BD%BF%E7%94%A8svg/" title="vue中使用svg">vue中使用svg</a><time datetime="2021-05-11T14:15:16.000Z" title="发表于 2021-05-11 22:15:16">2021-05-11</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2021/03/30/js%E5%BE%AA%E7%8E%AF%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F/" title="js循环的几种方式">js循环的几种方式</a><time datetime="2021-03-30T12:21:43.000Z" title="发表于 2021-03-30 20:21:43">2021-03-30</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2021/03/30/ES6%E6%A8%A1%E5%9D%97/" title="ES6模块">ES6模块</a><time datetime="2021-03-30T01:30:51.000Z" title="发表于 2021-03-30 09:30:51">2021-03-30</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2021/03/26/js%E4%B9%8Bvar-let%E5%8F%8Aconst%E5%8C%BA%E5%88%AB/" title="js之var let及const区别">js之var let及const区别</a><time datetime="2021-03-26T06:02:23.000Z" title="发表于 2021-03-26 14:02:23">2021-03-26</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2021/03/26/js%E5%88%A4%E6%96%AD%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E6%96%B9%E6%B3%95/" title="js判断数据类型方法">js判断数据类型方法</a><time datetime="2021-03-26T04:30:00.000Z" title="发表于 2021-03-26 12:30:00">2021-03-26</time></div></div></div></div><div class="card-widget" id="card-newest-comments"><div class="item-headline"><i class="fas fa-bolt"></i><span>最新评论</span></div><div class="aside-list"><span>正在加载中...</span></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            <a class="card-more-btn" href="/categories/" title="查看更多">
+    <i class="fas fa-angle-right"></i></a>
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/CSS/"><span class="card-category-list-name">CSS</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/JavaScript/"><span class="card-category-list-name">JavaScript</span><span class="card-category-list-count">11</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/android/"><span class="card-category-list-name">android</span><span class="card-category-list-count">3</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/git/"><span class="card-category-list-name">git</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/linux/"><span class="card-category-list-name">linux</span><span class="card-category-list-count">3</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/mysql/"><span class="card-category-list-name">mysql</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/nodejs/"><span class="card-category-list-name">nodejs</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/nodes/"><span class="card-category-list-name">nodes</span><span class="card-category-list-count">2</span></a></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/Android/" style="font-size: 1.45em; color: rgb(74, 62, 66)">Android</a><a href="/tags/linux/" style="font-size: 1.45em; color: rgb(169, 79, 73)">linux</a><a href="/tags/nodejs/" style="font-size: 1.45em; color: rgb(194, 8, 2)">nodejs</a><a href="/tags/node-s/" style="font-size: 1.15em; color: rgb(72, 128, 36)">node's</a><a href="/tags/ES6/" style="font-size: 1.45em; color: rgb(153, 22, 58)">ES6</a><a href="/tags/this%E6%8C%87%E5%90%91/" style="font-size: 1.15em; color: rgb(182, 3, 185)">this指向</a><a href="/tags/Charles/" style="font-size: 1.45em; color: rgb(13, 74, 47)">Charles</a><a href="/tags/HTML/" style="font-size: 1.15em; color: rgb(54, 47, 126)">HTML</a><a href="/tags/CSS/" style="font-size: 1.15em; color: rgb(38, 150, 152)">CSS</a><a href="/tags/element-ui/" style="font-size: 1.15em; color: rgb(90, 116, 26)">element-ui</a><a href="/tags/js-%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B%E5%92%8C%E5%BC%95%E7%94%A8%E7%B1%BB%E5%9E%8B%E5%8C%BA%E5%88%AB/" style="font-size: 1.15em; color: rgb(17, 11, 180)">js 基本类型和引用类型区别</a><a href="/tags/js%E4%B9%8Bvar-let%E5%8F%8Aconst%E5%8C%BA%E5%88%AB/" style="font-size: 1.15em; color: rgb(32, 68, 121)">js之var let及const区别</a><a href="/tags/js%E4%B9%8B%E9%97%AD%E5%8C%85/" style="font-size: 1.45em; color: rgb(68, 51, 118)">js之闭包</a><a href="/tags/js%E5%88%A4%E6%96%AD%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E6%96%B9%E6%B3%95/" style="font-size: 1.15em; color: rgb(111, 166, 14)">js判断数据类型方法</a><a href="/tags/websocket/" style="font-size: 1.45em; color: rgb(10, 69, 190)">websocket</a><a href="/tags/mac/" style="font-size: 1.15em; color: rgb(50, 111, 141)">mac</a><a href="/tags/git/" style="font-size: 1.15em; color: rgb(11, 51, 84)">git</a><a href="/tags/mysql/" style="font-size: 1.45em; color: rgb(162, 59, 101)">mysql</a><a href="/tags/nodejs-mysql/" style="font-size: 1.15em; color: rgb(179, 170, 51)">nodejs mysql</a><a href="/tags/webstorm/" style="font-size: 1.15em; color: rgb(91, 140, 27)">webstorm</a><a href="/tags/android/" style="font-size: 1.15em; color: rgb(198, 45, 112)">android</a><a href="/tags/%E9%98%B2%E6%8A%96%E4%B8%8E%E8%8A%82%E6%B5%81/" style="font-size: 1.15em; color: rgb(11, 127, 96)">防抖与节流</a><a href="/tags/module/" style="font-size: 1.15em; color: rgb(126, 35, 58)">module</a><a href="/tags/js%E6%B7%B1%E6%B5%85%E6%8B%B7%E8%B4%9D/" style="font-size: 1.15em; color: rgb(155, 187, 64)">js深浅拷贝</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/05/"><span class="card-archive-list-date">五月 2021</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/03/"><span class="card-archive-list-date">三月 2021</span><span class="card-archive-list-count">9</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/11/"><span class="card-archive-list-date">十一月 2020</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/08/"><span class="card-archive-list-date">八月 2020</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/07/"><span class="card-archive-list-date">七月 2020</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/06/"><span class="card-archive-list-date">六月 2020</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/05/"><span class="card-archive-list-date">五月 2020</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/04/"><span class="card-archive-list-date">四月 2020</span><span class="card-archive-list-count">11</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">28</div></div><div class="webinfo-item"><div class="item-name">已运行时间 :</div><div class="item-count" id="runtimeshow" data-publishDate="2018-06-06T16:00:00.000Z"></div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2021-05-12T05:37:11.155Z"></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('/img/index.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2021 By 吴星喜</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Hi, welcome to my <a target="_blank" rel="noopener" href="https://github.com/wuxingxi888/">blog</a>!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><div class="js-pjax"><script>function subtitleType () {
+  fetch('https://v1.hitokoto.cn')
+    .then(response => response.json())
+    .then(data => {
+      if (true) {
+        var from = '出自 ' + data.from
+        var sub = "今日事&#44;今日畢,Never put off till tomorrow what you can do today".length == 0 ? new Array() : "今日事&#44;今日畢,Never put off till tomorrow what you can do today".split(',')
+        var both = sub.unshift(data.hitokoto, from)
+        var typed = new Typed('#subtitle', {
+          strings: sub,
+          startDelay: 300,
+          typeSpeed: 150,
+          loop: false,
+          backSpeed: 50,
+        })
+      } else {
+        document.getElementById('subtitle').innerHTML = data.hitokoto
+      }
+    })
+}
 
-            &lt;template&gt;  &lt;span&gt;    &lt;span class&#x3D;&quot;resetPass&quot; @click&#x3D;&quot;openDialog ...</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/"><i class="fa fa-fw fa-chevron-left" aria-hidden="true"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-fw fa-chevron-right" aria-hidden="true"></i></a></div></nav></div><div class="aside_content" id="aside_content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><img class="avatar-img" src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">吴星喜</div><div class="author-info__description">爱码仕 ？</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives"><div class="headline">文章</div><div class="length_num">28</div></a></div><div class="card-info-data-item is-center">      <a href="/tags"><div class="headline">标签</div><div class="length_num">24</div></a></div><div class="card-info-data-item is-center">     <a href="/categories"><div class="headline">分类</div><div class="length_num">10</div></a></div></div><div class="card-info-bookmark is-center"><a class="bookmark button--primary button--animated" id="bookmark-it" href="javascript:;" title="加入书签" target="_self"><i class="fa fa-bookmark" aria-hidden="true"></i><span>加入书签</span></a></div><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/wuxingxi888" target="_blank" title="Github"><i class="fa fa-github" aria-hidden="true"></i></a><a class="social-icon" href="982747033@qq.com" target="_blank" title="Email"><i class="fa fa-envelope" aria-hidden="true"></i></a></div></div></div><div class="card-widget card-announcement"><div class="card-content"><div class="item-headline"><i class="fa fa-bullhorn card-announcement-animation" aria-hidden="true"></i><span>公告</span></div><div class="announcement_content">感謝訪問本站，若喜歡請收藏 ^_^</div></div></div><div class="card-widget card-recent-post"><div class="card-content"><div class="item-headline"><i class="fa fa-history" aria-hidden="true"></i><span>最新文章</span></div><div class="aside-recent-item"> <div class="aside-recent-post"><a href="/2021/05/11/vue%E4%B8%AD%E4%BD%BF%E7%94%A8svg/"><div class="aside-post-cover"><img class="aside-post-bg lazyload" data-src="/img/post.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" title="vue中使用svg" alt="vue中使用svg"/></div><div class="aside-post-title"><div class="aside-post_title" href="/2021/05/11/vue%E4%B8%AD%E4%BD%BF%E7%94%A8svg/" title="vue中使用svg">vue中使用svg</div><time class="aside-post_meta post-meta__date" title="发表于 2021-05-11 22:15:16">2021-05-11</time></div></a></div><div class="aside-recent-post"><a href="/2021/03/30/js%E5%BE%AA%E7%8E%AF%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F/"><div class="aside-post-cover"><img class="aside-post-bg lazyload" data-src="./hexoJavaScript.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" title="js循环的几种方式" alt="js循环的几种方式"/></div><div class="aside-post-title"><div class="aside-post_title" href="/2021/03/30/js%E5%BE%AA%E7%8E%AF%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F/" title="js循环的几种方式">js循环的几种方式</div><time class="aside-post_meta post-meta__date" title="发表于 2021-03-30 20:21:43">2021-03-30</time></div></a></div><div class="aside-recent-post"><a href="/2021/03/30/ES6%E6%A8%A1%E5%9D%97/"><div class="aside-post-cover"><img class="aside-post-bg lazyload" data-src="http://qiniu.wuxingxi888.top/hexo-ES6.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" title="ES6模块" alt="ES6模块"/></div><div class="aside-post-title"><div class="aside-post_title" href="/2021/03/30/ES6%E6%A8%A1%E5%9D%97/" title="ES6模块">ES6模块</div><time class="aside-post_meta post-meta__date" title="发表于 2021-03-30 09:30:51">2021-03-30</time></div></a></div><div class="aside-recent-post"><a href="/2021/03/26/js%E4%B9%8Bvar-let%E5%8F%8Aconst%E5%8C%BA%E5%88%AB/"><div class="aside-post-cover"><img class="aside-post-bg lazyload" data-src="http://qiniu.wuxingxi888.top/hexoJavaScript.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" title="js之var let及const区别" alt="js之var let及const区别"/></div><div class="aside-post-title"><div class="aside-post_title" href="/2021/03/26/js%E4%B9%8Bvar-let%E5%8F%8Aconst%E5%8C%BA%E5%88%AB/" title="js之var let及const区别">js之var let及const区别</div><time class="aside-post_meta post-meta__date" title="发表于 2021-03-26 14:02:23">2021-03-26</time></div></a></div><div class="aside-recent-post"><a href="/2021/03/26/js%E5%88%A4%E6%96%AD%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E6%96%B9%E6%B3%95/"><div class="aside-post-cover"><img class="aside-post-bg lazyload" data-src="http://qiniu.wuxingxi888.top/hexoJavaScript.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" title="js判断数据类型方法" alt="js判断数据类型方法"/></div><div class="aside-post-title"><div class="aside-post_title" href="/2021/03/26/js%E5%88%A4%E6%96%AD%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E6%96%B9%E6%B3%95/" title="js判断数据类型方法">js判断数据类型方法</div><time class="aside-post_meta post-meta__date" title="发表于 2021-03-26 12:30:00">2021-03-26</time></div></a></div></div></div></div><div class="card-widget card-categories"><div class="card-content"><div class="item-headline"><i class="fa fa-folder-open" aria-hidden="true"></i><span>分类</span></div><ul class="aside-category-item">       <li class="aside-category-list"><a class="aside-category-list_link" href="/categories/CSS/"><span class="aside-category-list_name">CSS</span><span class="aside-category-list_length">1</span></a></li><li class="aside-category-list"><a class="aside-category-list_link" href="/categories/JavaScript/"><span class="aside-category-list_name">JavaScript</span><span class="aside-category-list_length">11</span></a></li><li class="aside-category-list"><a class="aside-category-list_link" href="/categories/android/"><span class="aside-category-list_name">android</span><span class="aside-category-list_length">3</span></a></li><li class="aside-category-list"><a class="aside-category-list_link" href="/categories/git/"><span class="aside-category-list_name">git</span><span class="aside-category-list_length">1</span></a></li><li class="aside-category-list"><a class="aside-category-list_link" href="/categories/linux/"><span class="aside-category-list_name">linux</span><span class="aside-category-list_length">3</span></a></li><li class="aside-category-list"><a class="aside-category-list_link" href="/categories/mysql/"><span class="aside-category-list_name">mysql</span><span class="aside-category-list_length">2</span></a></li><li class="aside-category-list"><a class="aside-category-list_link" href="/categories/nodejs/"><span class="aside-category-list_name">nodejs</span><span class="aside-category-list_length">1</span></a></li><li class="aside-category-list"><a class="aside-category-list_link" href="/categories/nodes/"><span class="aside-category-list_name">nodes</span><span class="aside-category-list_length">2</span></a></li><li class="aside-category-list"><a class="aside-category-list_link" href="/categories/vue/"><span class="aside-category-list_name">vue</span><span class="aside-category-list_length">2</span></a></li><li class="aside-category-list"><a class="aside-category-list_link" href="/categories/%E6%8A%93%E5%8C%85%E5%B7%A5%E5%85%B7/"><span class="aside-category-list_name">抓包工具</span><span class="aside-category-list_length">1</span></a></li></ul></div></div><div class="card-widget card-tags"><div class="card-content"><div class="item-headline"><i class="fa fa-tags" aria-hidden="true"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/Android/" style="font-size: 24px; color: #99a9bf">Android</a> <a href="/tags/CSS/" style="font-size: 16px; color: #999">CSS</a> <a href="/tags/Charles/" style="font-size: 24px; color: #99a9bf">Charles</a> <a href="/tags/ES6/" style="font-size: 24px; color: #99a9bf">ES6</a> <a href="/tags/HTML/" style="font-size: 16px; color: #999">HTML</a> <a href="/tags/android/" style="font-size: 16px; color: #999">android</a> <a href="/tags/element-ui/" style="font-size: 16px; color: #999">element-ui</a> <a href="/tags/git/" style="font-size: 16px; color: #999">git</a> <a href="/tags/js-%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B%E5%92%8C%E5%BC%95%E7%94%A8%E7%B1%BB%E5%9E%8B%E5%8C%BA%E5%88%AB/" style="font-size: 16px; color: #999">js 基本类型和引用类型区别</a> <a href="/tags/js%E4%B9%8Bvar-let%E5%8F%8Aconst%E5%8C%BA%E5%88%AB/" style="font-size: 16px; color: #999">js之var let及const区别</a> <a href="/tags/js%E4%B9%8B%E9%97%AD%E5%8C%85/" style="font-size: 24px; color: #99a9bf">js之闭包</a> <a href="/tags/js%E5%88%A4%E6%96%AD%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E6%96%B9%E6%B3%95/" style="font-size: 16px; color: #999">js判断数据类型方法</a> <a href="/tags/js%E6%B7%B1%E6%B5%85%E6%8B%B7%E8%B4%9D/" style="font-size: 16px; color: #999">js深浅拷贝</a> <a href="/tags/linux/" style="font-size: 24px; color: #99a9bf">linux</a> <a href="/tags/mac/" style="font-size: 16px; color: #999">mac</a> <a href="/tags/module/" style="font-size: 16px; color: #999">module</a> <a href="/tags/mysql/" style="font-size: 24px; color: #99a9bf">mysql</a> <a href="/tags/node-s/" style="font-size: 16px; color: #999">node's</a> <a href="/tags/nodejs/" style="font-size: 24px; color: #99a9bf">nodejs</a> <a href="/tags/nodejs-mysql/" style="font-size: 16px; color: #999">nodejs mysql</a> <a href="/tags/this%E6%8C%87%E5%90%91/" style="font-size: 16px; color: #999">this指向</a> <a href="/tags/websocket/" style="font-size: 24px; color: #99a9bf">websocket</a> <a href="/tags/webstorm/" style="font-size: 16px; color: #999">webstorm</a> <a href="/tags/%E9%98%B2%E6%8A%96%E4%B8%8E%E8%8A%82%E6%B5%81/" style="font-size: 16px; color: #999">防抖与节流</a></div></div></div><div class="card-widget card-archives"><div class="card-content"><div class="item-headline"><i class="fa fa-archive" aria-hidden="true"></i><span>归档</span></div><ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/05/"><span class="archive-list-date">2021年05月</span><span class="archive-list-count">1</span></a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/03/"><span class="archive-list-date">2021年03月</span><span class="archive-list-count">9</span></a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/11/"><span class="archive-list-date">2020年11月</span><span class="archive-list-count">1</span></a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/08/"><span class="archive-list-date">2020年08月</span><span class="archive-list-count">3</span></a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/07/"><span class="archive-list-date">2020年07月</span><span class="archive-list-count">1</span></a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/06/"><span class="archive-list-date">2020年06月</span><span class="archive-list-count">1</span></a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/"><span class="archive-list-date">2020年05月</span><span class="archive-list-count">1</span></a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/"><span class="archive-list-date">2020年04月</span><span class="archive-list-count">11</span></a></li></ul></div></div><div class="card-widget card-webinfo"><div class="card-content"><div class="item-headline"><i class="fas fa-chart-line" aria-hidden="true"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="webinfo-article-name">文章数目 :</div><div class="webinfo-article-count">28</div></div><div class="webinfo-item"><div class="webinfo-runtime-name">已运行时间 :</div><div class="webinfo-runtime-count" id="webinfo-runtime-count" start_date="4/1/2020 00:00:00">     </div></div><div class="webinfo-item"><div class="webinfo-site-wordcount-name">本站总字数 :</div><div class="webinfo-site-wordcount">24.9k</div></div><div class="webinfo-item">      <div class="webinfo-site-uv-name">本站访客数 :</div><div class="webinfo-site-uv-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="webinfo-site-name">本站总访问量 :</div><div class="webinfo-site-pv-count" id="busuanzi_value_site_pv"></div></div></div></div></div></div></main><footer id="footer" style="background-image: url(/img/index.jpg)" data-type="photo"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By 吴星喜</div><div class="framework-info"><span>驱动 </span><a href="https://hexo.io" target="_blank" rel="noopener"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener"><span>Butterfly</span></a></div><div class="footer_custom_text">Hi, welcome to my <a href="https://github.com/wuxingxi888/" target="_blank" rel="noopener">blog</a>!</div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><a class="translate_chn_to_cht" id="translateLink" href="javascript:translatePage();" title="简繁转换" target="_self">繁</a><i class="darkmode far fa-moon" id="darkmode" title="夜间模式"></i></div><div id="rightside-config-show"><div id="rightside_config" title="设置"><i class="fa fa-cog" aria-hidden="true"></i></div><i class="fa fa-arrow-up" id="go-up" title="回到顶部" aria-hidden="true"></i></div></section><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script id="ribbon_piao" mobile="false" src="/js/third-party/piao.js"></script><script id="canvas_nest" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="false" src="/js/third-party/canvas-nest.js"></script><script src="/js/third-party/activate-power-mode.js"></script><script>POWERMODE.colorful = true;
-POWERMODE.shake = true;
-document.body.addEventListener('input', POWERMODE);
-</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@latest/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/lazysizes@latest/lazysizes.min.js" async=""></script><script src="/js/third-party/click_heart.js"></script><script src="https://cdn.jsdelivr.net/npm/typed.js"></script><script>var subtitleEffect = true
-fetch('https://v1.hitokoto.cn')
-.then(function (res){
-  return res.json();
-})
-.then(function (data) {
-  if (subtitleEffect){
-    var from = '出自 ' + data.from
-    var sub = '今日事&#44;今日畢,Never put off till tomorrow what you can do today'.length == 0  ? new Array() : '今日事&#44;今日畢,Never put off till tomorrow what you can do today'.split(",");
-    var both = sub.unshift(data.hitokoto,from)  
-    var typed = new Typed("#subtitle", {
-      strings: sub,
-      startDelay: 300,
-      typeSpeed: 150,
-      loop: false,
-      backSpeed: 50
-    });
-  }else{
-    document.getElementById("subtitle").innerHTML = data.hitokoto        
+if (true) {
+  if (typeof Typed === 'function') {
+    subtitleType()
+  } else {
+    getScript('https://cdn.jsdelivr.net/npm/typed.js/lib/typed.min.js').then(subtitleType)
   }
-})
-.catch(function (err) {
-  console.error(err);
-})
-</script></body></html>
+} else {
+  subtitleType()
+}
+</script></div><script defer="defer" id="fluttering_ribbon" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
